@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-series;
+}
+.page1{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.555),rgba(0, 0, 0, 0.555)),url(../Images/first_background.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding:35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.logo{
+    width: 180px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+    text-transform: uppercase;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0%;
+    background: #02858f;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+}
+.content h1{
+    font-size: 70px;
+    margin-top: 80px;
+
+}
+.content p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius:50px;
+    font-weight: bold;
+    border: 2px solid #009688;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    font-size: 25px;
+}
+span{
+    background: #009688;
+    height: 100%;
+    width: 0%;
+    border-radius: 50px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+button:hover span{
+    width:100%;
+}
+button:hover{
+    border:none;
+}
+
+/* Starting of Page 2 */
+
+
+.page2{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.596),rgba(0, 0, 0, 0.37)),url(../Images/second_background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.onTheGo{
+    width: 100%;
+    position: absolute;
+    top: 120%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+}
+.onTheGo h1{
+    font-size: 70px;
+    margin-top: 100px;
+    margin-left: 200px;
+}
+.onTheGo h2{
+    margin: 20px auto;
+    font-weight: 100px;
+    line-height: 25px;
+    margin-left: 200px;
+    font-size: 40px;
+}
+.onTheGo p{
+    padding-top: 60px;
+    font-size: 20px;
+    margin: 20px auto;
+    font-weight: 100px;
+    line-height: 25px;
+    margin-left: 200px;
+}
+.app{
+    width: 400px;
+    border-radius: 20%;
+    margin-left: 50px;
+    margin-top: 130px;
+    border:5px solid rgb(255, 255, 255);
+}
+.appstore{
+    width: 100px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-left: 150px;
+    margin-top: 100px;
+    margin-bottom: 150px;
+    border: 5px solid cyan;
+    transition: all .2s ease-in-out; 
+}
+.appstore:hover{
+    transform: scale(1.2);
+}
+.playstore{
+    width: 100px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-left: 150px;
+    margin-top: 100px;
+    margin-bottom: 150px;
+    border: 5px solid cyan;
+    transition: all .2s ease-in-out; 
+}
+.playstore:hover{
+    transform: scale(1.2);
+}
+
+/* Image Slider */
